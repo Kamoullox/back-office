@@ -66,7 +66,6 @@ if ($_POST) {
             $errors['description'] = true;
             $messages['description'] = "la description contient un caractère interdit < ou >";
         }
-        dump((strpos($_POST['description'], '<') || false) == 0);
     }
 
     // validation des données du champ price
