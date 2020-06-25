@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Article</title>
+</head>
+<body>
+    <div class="container text-center">
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">name</th>
+                    <th scope="col">price</th>
+                    <th scope="col">quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for article in articles %}
+                    <tr>
+                        <th scope="row">{{ article.id }}</td> 
+                        <td>{{ article.name }}</td> 
+                        <td>{{ article.price }}</td> 
+                        <td>{{ article.quantity }}</td>           
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <a href="http://www.kam-dev.fr/php-oop/public/article-new-twig.php" class="btn btn-primary btn-lg active mt-10 mx-auto" role="button" aria-pressed="true">Creer un nouvelle article</a>
+
+    </div>
+    
+</body>
+</html>

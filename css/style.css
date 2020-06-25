@@ -1,0 +1,24 @@
+
+
+.body{
+    position: relative;
+}
+
+.first {
+    padding-top: 10px;
+}
+
+.form__items{
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+
+}
+
+.table {
+    margin-top: 10px;
+}
+
+.container {
+    margin-top: 10px;
+}
