@@ -62,7 +62,6 @@ if ($_POST) {
     // validation des données du champ description
     if (isset($_POST['description'])) {
         if(strpos($_POST['description'], '<') || strpos($_POST['description'], '>') || $_POST['description'][0] === '<' || $_POST['description'][0] === '>')
-        if(((strpos($_POST['description'], '<') || strpos($_POST['description'], '>')) === 0) || (strpos($_POST['description'], '<') || strpos($_POST['description'], '>')))
         {
             $errors['description'] = true;
             $messages['description'] = "la description contient un caractère interdit < ou >";
